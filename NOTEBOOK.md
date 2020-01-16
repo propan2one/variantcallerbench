@@ -13,6 +13,12 @@ git checkout -b development
 git push origin development
 ```
 
-2. lancement d'un job de test pour voir si on peut travailler avec l'env construit
+3. lancement d'un job de test pour voir si on peut travailler avec l'env construit
 
-`nextflow run nf-core/rnaseq -revision 1.3`
+`nextflow run main.nf -profile conda env-variantcallerbench-1.0dev`
+
+Dans un 1er temps il va falloir maitriser certaine choses :
+
+- lancer le pipeline avec conda
+- maitriser les input (comprendre comment on fait les arguments dans la ligne de commande etc)
+- maitriser les output (produire un fichier)
